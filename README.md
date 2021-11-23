@@ -12,7 +12,7 @@ You can find all installation procedure on pyvienv.intall
 ### Preparation
 Put your video dataset inside data/video_data in this form --
 
-'''
+```
 + data
         - annotation
         + video_data
@@ -23,10 +23,10 @@ Put your video dataset inside data/video_data in this form --
                         - video2.mp4
                         - video3.mp4
                         - ...        
-'''
+```
 
 To generate train/val/test partitions from the dataset. Information will be saved on *annotation* folder.
 
-'''
+```
 python prepare_data.py
-'''
+```
