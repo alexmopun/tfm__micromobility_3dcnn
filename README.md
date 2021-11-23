@@ -22,4 +22,4 @@ If files are in the following disposition:
 +         video3.mp4
 +         ...
 
-python prepare_data.py
+        python prepare_data.py
