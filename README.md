@@ -2,9 +2,11 @@
 
 # Getting Started
 ## Requeriments
-* Python3.9
-* pytorch
+* Python 3.7 or 3.8
 * pytorchvideo
+* torch 1.8 or above
+* pytorch-lightning
+* pytorchvision
 
 You can find all installation procedure on pyvienv.intall
 
