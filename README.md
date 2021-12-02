@@ -6,7 +6,7 @@
 * pytorchvideo
 * torch 1.8 or above
 * pytorch-lightning
-* pytorchvision
+* torchvision
 
 You can find all installation procedure on pyvienv.intall
 
