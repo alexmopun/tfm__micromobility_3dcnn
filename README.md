@@ -32,3 +32,17 @@ To generate train/val/test partitions from the dataset. Information will be save
 ```
 python prepare_data.py
 ```
+
+## Training
+
+To train a model on a gpu:
+
+```
+python train.py
+```
+
+This program uses pretrained architectures from *Model Zoo* These are the models that has been tested:
+* X3D architectures: x3d_m, x3d_s
+* Resnet(2+1)D: r2plus1d_r50
+
+
