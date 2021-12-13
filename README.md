@@ -46,8 +46,8 @@ This program uses pretrained architectures from *Model Zoo*. These are the diffe
 * Resnet(2+1)D: r2plus1d_r50
 
 ## Add a new model
-If you are keen on use a new *Model Zoo*archicture that is not listed above, modify the **input_transformations_by_architecture.py** file. This file contains a dictionary in which the key is the name of the architecture and the values are transformation parameters.
+If you are keen on use a new *Model Zoo* archicture that is not listed above, modify the **input_transformations_by_architecture.py** file. This file contains a dictionary in which the key is the name of the architecture and the values are transformation parameters.
 
-You can find information about all available models here.
+You can find information about all available models [here](https://pytorchvideo.readthedocs.io/en/latest/model_zoo.html).
 
 
