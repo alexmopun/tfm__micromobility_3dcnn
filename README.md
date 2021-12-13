@@ -41,8 +41,13 @@ To train a model on a gpu:
 python train.py
 ```
 
-This program uses pretrained architectures from *Model Zoo* These are the models that has been tested:
-* X3D architectures: x3d_m, x3d_s
+This program uses pretrained architectures from *Model Zoo*. These are the different models that can been used by calling the argument *--model*. If you want add more *Model Zoo* architectures please check the **Add a new Model** section:
+* X3D architectures: x3d_m, x3d_s, x3d_xs
 * Resnet(2+1)D: r2plus1d_r50
+
+## Add a new model
+If you are keen on use a new *Model Zoo*archicture that is not listed above, modify the **input_transformations_by_architecture.py** file. This file contains a dictionary in which the key is the name of the architecture and the values are transformation parameters.
+
+You can find information about all available models here.
 
 
