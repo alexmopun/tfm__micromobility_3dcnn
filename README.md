@@ -37,7 +37,8 @@ python prepare_data.py
 
 To train a model on a gpu example:
 
-```srun --mem 8G gres=gpu:1 --time=23:55:00 python train.py --model=x3d_s --use_cuda --gpus=1 --max_epochs=150
+```
+srun --mem 8G gres=gpu:1 --time=23:55:00 python train.py --model=x3d_s --use_cuda --gpus=1 --max_epochs=150
 ```
 
 This program uses pretrained architectures from *Model Zoo*. These are the different models that can been used by calling the argument *--model*. If you want add more *Model Zoo* architectures please check the **Add a new Model** section:
