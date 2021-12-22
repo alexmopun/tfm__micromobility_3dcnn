@@ -48,7 +48,7 @@ srun --mem 8G gres=gpu:1 -c 4 --time=23:55:00 python train.py --model=x3d_s --us
 *c* must be equal to *num_workers*. If you are using *calcula* servers, please use *c* <= 4
 
 ### Continue training from checkpoint
-The framework saves the checkpoint with minimum validation loss automatically. Additionally it creates a *.yaml* file which contains the hyper-parameters. To continue the training from a checkpoint:
+The framework saves the checkpoint with minimum validation loss automatically. By default it will be savd inside the *lightning_logs* folder (it's the .ckpt file). Additionally it creates a *.yaml* file which contains the hyper-parameters. To continue the training from a checkpoint:
 
 ```
 python train.py --model=x3d_s --use_cuda --gpus=1 --num_workers=4 --max_epochs=150 --load_ckpt --ckpt_path=path/to/checkpoint --hparams_path=path/to/hpamarams
