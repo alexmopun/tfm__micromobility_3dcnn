@@ -56,7 +56,9 @@ python train.py --model=x3d_s --use_cuda --gpus=1 --num_workers=4 --max_epochs=1
 
 ### Test mode
 To make inference of the test dataset:
+```
 python train.py --model=x3d_s --use_cuda --gpus=1 --num_workers=4 --test --ckpt_path=path/to/checkpoint --hparams_path=path/to/hpamarams
+```
 
 ## Add a new model
 If you are keen on use other *Model Zoo* archictures that is not listed above, modify the **input_transformations_by_architecture.py** file. This file contains a dictionary in which the key is the name of the architecture and the values are transformation parameters. It is possible that additional code modifications may be required to make the new model work.
