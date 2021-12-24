@@ -2,11 +2,15 @@
 
 # Getting Started
 ## Requeriments
+To be able to train and test models:
 * Python 3.7 or above
 * pytorchvideo
 * torch 1.8 or above
 * pytorch-lightning
 * torchvision
+
+Additionally, if you want to make inference over a video:
+* opencv
 
 You can find all installation procedure on pyvienv.install
 
