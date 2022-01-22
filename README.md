@@ -12,6 +12,9 @@ To be able to train and test models:
 Additionally, if you want to make inference over a video:
 * opencv
 
+And if you want to divide 'long' videos:
+* moviepy
+
 You can find all installation procedure on pyvienv.install
 
 ## Training a custom dataset
@@ -68,3 +71,8 @@ python train.py --model=x3d_s --use_cuda --gpus=1 --num_workers=4 --test --ckpt_
 If you are keen on use other *Model Zoo* archictures that is not listed above, modify the **input_transformations_by_architecture.py** file. This file contains a dictionary in which the key is the name of the architecture and the values are transformation parameters. It is possible that additional code modifications may be required to make the new model work.
 
 You can find information about all available models [here](https://pytorchvideo.readthedocs.io/en/latest/model_zoo.html).
+
+## Add a new model
+Some utils have been added to help into some tasks:
+* **preprocess_long videos:** divides videos into 2 second clips.
+*  
