@@ -72,7 +72,8 @@ If you are keen on use other *Model Zoo* archictures that is not listed above, m
 
 You can find information about all available models [here](https://pytorchvideo.readthedocs.io/en/latest/model_zoo.html).
 
-## Add a new model
-Some utils have been added to help into some tasks:
-* **preprocess_long videos:** divides videos into 2 second clips.
-*  
+## Preprocess long videos
+**preprocess_long videos.py** divides videos into 2 second clips. For each class will be generated a subfolder. Each video will produce a subfolder inside its correspondent class with the clips generated.
+
+## sidewalk test V1 and V3
+There are 2 sidewalk tests. The first one is used to work with short clips (which not required long video pre-processing) whereas the V3 version uses the folders generated with *preprocess_long videos.py*.
