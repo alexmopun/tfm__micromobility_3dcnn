@@ -73,7 +73,11 @@ If you are keen on use other *Model Zoo* archictures that is not listed above, m
 You can find information about all available models [here](https://pytorchvideo.readthedocs.io/en/latest/model_zoo.html).
 
 ## Preprocess long videos
-**preprocess_long videos.py** divides videos into 2 second clips. For each class will be generated a subfolder. Each video will produce a subfolder inside its correspondent class with the clips generated.
+**preprocess_long videos.py** divides videos into 2 second clips. For each class will be generated a subfolder. Each video from the target dataset will produce a subfolder inside its correspondent class with the clips generated.
 
 ## sidewalk test V1 and V3
-There are 2 sidewalk tests. The first one is used to work with short clips (which not required long video pre-processing) whereas the V3 version uses the folders generated with *preprocess_long videos.py*.
+There are 2 sidewalk tests. The first one divides the clips automatically whereas the V3 version uses the folders generated with *preprocess_long videos.py*. It is recommended to use the V3 version if you are working with long videos whereas it's more efficient to use the other version if you work with short clips. Both sidewalk tests will give the following results:
+
+* Test 1: Confusion matrix per video (if any clip of the video is TP or TN, the result of this test is TP or TN respectively).
+* Test 2: Confusion matrix per clip (all clips of all videos are classified individually).
+* Inference time: Time that elapses between we pick an stack of frames and when we make a prediction of this stack. Also includes variance and std.
