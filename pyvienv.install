@@ -6,3 +6,6 @@ pip install pytorchvideo
 pip install torch
 pip install pytorch_lightning
 pip install torchvision
+
+pip install opencv-python
+pip install pymovie
